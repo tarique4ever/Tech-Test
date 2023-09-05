@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <header>Header</header>
+
+      <main>
+        <div class="overlay"></div>
+        <img
+          src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg"
+          srcset="
+            https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=300 300w,
+            https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=600 600w,
+            https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=900 900w
+          "
+          alt=""
+        />
+        <div class="info">
+          <h1>This is the title</h1>
+          <button id="clickButton">Click here</button>
+        </div>
+      </main>
+
+      <footer>Footer</footer>
+    </div>
+    <script>
+      document
+        .getElementById("clickButton")
+        .addEventListener("click", function () {
+          alert("Hello World");
+        });
+    </script>
+  </body>
+</html>
